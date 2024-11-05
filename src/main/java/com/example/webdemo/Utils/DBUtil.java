@@ -42,4 +42,7 @@ public class DBUtil {
             }
         }
     }
+    public void testGit(){
+        System.out.println("testGit!");
+    }
 }
