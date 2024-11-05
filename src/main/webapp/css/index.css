@@ -1,0 +1,72 @@
+body{
+    font-family: sans-serif;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+}
+.container{
+    width: 380px;
+    /* height: 380px; */
+    margin: 7% auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    box-shadow: 0 0 17px #333;/*加点阴影*/
+}
+/* 给header标签加css */
+.header{
+    text-align: center;
+    padding-top: 50px;
+}
+/* 给header标签里的h1标签加样式 */
+.header h1{
+    color: #333;
+    font-size: 45px;
+    margin-bottom: 80px;
+}
+.main{
+    text-align: center;
+}
+.main input,button{
+    width: 300px;
+    height: 40px;
+    /* 展示时边框取消 */
+    border: none;
+    /* 选中时标签取消 */
+    /* outline: none; */
+    margin-bottom: 40px;
+    padding-left: 40px;
+    /* 什么是boarder-box? */
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #333;
+}
+.main button{
+    padding-left: 0;
+    background-color: cornflowerblue;
+    letter-spacing: 1px;
+    /* 让字体更粗 */
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+/* 按钮被选中时特效 */
+.main button:hover{
+    box-shadow: 2px 2px 5px #555;
+    background-color: #7799d4;
+}
+/* 输入框被选中时特效 */
+.main input:hover{
+    box-shadow: 2px 2px 5px #555;
+    background-color: #ddd;
+}
+.main span{
+    /* span标签相对定位 */
+    position: relative;
+}
+.main i{
+    position: absolute;
+    left: 15px;
+    top: 2px;
+    color: #333;
+    font-size: 15px;
+}

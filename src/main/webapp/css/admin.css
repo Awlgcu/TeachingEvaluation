@@ -1,0 +1,182 @@
+*{
+    box-sizing: border-box;
+}
+html, body {
+    /* 100%是相对于父元素，html的父元素就是窗口 */
+    /* body的父元素为html，100%意为和html一样大*/
+    height: 100%;
+}
+
+body {
+    /* background-image: url("../bg.jpg"); */
+    /* 取消平铺 */
+    background-repeat: no-repeat;
+    /* 大小尽量撑满 */
+    background-size: cover;
+    /* background-position: center center; */
+    /* overflow: auto; */
+
+}
+.nav{
+    width: 100%;
+    height: 100px;
+    /* 把导航栏背景设为透明 */
+    /* background-color: rgba(50, 50, 50, 0.4); */
+    background-color:chartreuse;
+    color:white;
+    /* 弹性布局设置导航栏内元素垂直水平位置 */
+    display: flex;
+    /* 垂直居中 */
+    align-items: center;
+}
+.nav .spacer{
+    width: 65%;
+}
+.nav a{
+    color:aliceblue;
+    padding:0 10px;
+    text-decoration: none;
+    /* border: black 1px solid; */
+}
+.nav a:hover{
+    color: #008CBA;
+    cursor: pointer;
+}
+.container{
+    /* float: left; */
+}
+.content-left{
+    float: left;
+    padding: 15px;
+    width:25%;
+}
+.content-left ul{
+    list-style-type: none;
+}
+.span{
+    text-align: center;
+    margin-bottom: 4px;
+    padding: 8px;
+    display: block;
+    /* border: black solid 1px; */
+    background-color: #eee;
+    color: black;
+}
+.clicked{
+    background-color: #008CBA;
+    color: white;
+}
+.span:hover{
+    background-color: #008CBA;
+    color: white;
+}
+
+.content-right{
+    margin: 2% auto;
+    float: left;
+    padding: 15px;
+    width:75%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+label{
+    padding :12px 12px 12px 0;
+    display: inline-block;
+}
+.row{
+    width:100%;
+    float: left;
+    margin-top: 6px;
+}
+/*已修改*/
+input[type=number], input[type=text]{
+    width:80%;
+    padding: 12px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+}
+.fullInput{
+    width:100%;
+    padding: 12px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+}
+form{
+    margin: 10px;
+    width: 45%;
+    float: left;
+    border: 1px solid #c3c3c3;
+    border-radius: 3px;
+    /* background-origin: padding-box; */
+}
+.fullForm{
+    margin: 10px;
+    width: 100%;
+    float: left;
+    border: 1px solid #c3c3c3;
+    border-radius: 3px;
+    /* background-origin: padding-box; */
+}
+.onlySubmit{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+}
+.onlySubmit {
+    background-color: #45a049;
+}
+.updateBtn{
+    /* float: left; */
+    display: inline-block;
+    width: 40%;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 3px;
+}
+.updateBtn:hover {
+    background-color: #45a049;
+}
+.deleteBtn{
+    /* float: left; */
+    display: inline-block;
+    width: 40%;
+    margin: 5px;
+    background-color:indianred;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 3px;
+}
+.deleteBtn:hover {
+    background-color:crimson;
+}
+
+
+.tea, .stu, .adm, .res, .indi
+{
+    padding:10px;
+    text-align:center;
+    background-color:#008CBA;
+    /* border:solid 1px #c3c3c3; */
+    border:solid 1px black;
+    padding:20px;
+    display:none
+}
+.tea:hover, .stu:hover, .adm:hover, .res:hover, .indi:hover{
+    background-color:blue;
+}
+#teacher:hover, #student:hover, #admin:hover, #result:hover, #indicator:hover{
+    background-color:aqua;
+}
+#teacher, #student, #admin, #result, #indicator{
+    padding:30px;
+    text-align:center;
+    background-color:aquamarine;
+    /* border:solid 1px #c3c3c3; */
+    border:solid 1px black
+}
